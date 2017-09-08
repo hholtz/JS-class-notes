@@ -1,0 +1,100 @@
+//// Part 1 -- Fundamentals ////
+
+Length
+  name.length
+  "Hannah".length
+
+Math
+  3 + 4
+  12 / 4
+
+Reference Error
+  Get this when something is undefined, like typing only `eggplant`
+
+
+// Get Started With Programming //
+
+Interactive JS
+  Confirmation Messages/Pop Ups
+    ex: confirm("I am awesome!");
+  Prompts/Question Box
+    ex: prompt("What is your name?");
+
+Data Types
+  1) Numbers - ex: 4, 10
+  2) Strings - to create one just put quotes around it, ex: "Hannah", can do "Hey I'm Hannah".length > this includes spaces
+  3) Boolean - true/false,  ex: true or 4> 2
+
+    practice: "Hey I'm Hannah".length = 14      14 > 10 = true
+
+Console.log
+  Prints out whatever is in the parentheses
+  ex: console.log(2*5)  = 10
+  ex: console.log("Hello World")
+
+List of comparison operators:
+  > Greater than   < Less than  <= Less than or equal to  >= Greater than or equal to   === Equal to  !== Not equal to
+
+If, Else
+    # ex: if("Hannah".length >= 2){
+      console.log("You have a long name")
+      }
+
+    # ex: if("myName".length >= 2){
+      console.log("You have a long name")
+      }
+      else {
+      console.log("You have a short name")
+      }
+
+    # ex: if (12 / 4 === "Ari".length) {
+    confirm("Will this run the first block?");
+    } else {
+    confirm("Or the second block?");
+    }
+
+Math
+    Use PEMDAS just like in math class
+
+Modulo
+      - When % is placed between two numbers, the computer will divide the first number by the second, and then return the remainder of that division.
+        ex: 23 % 10 = 3
+        ex: console.log(14 % 3) = 2
+        ex: 9 % 3 = 0
+        ex: `10 % 2 === 0`   = true
+
+Module + If/Else
+    ex:
+      if(8 % 2 === 0) {
+        console.log("The first number is even");
+      } else {
+        console.log("The first number is odd");
+      }
+
+Substring
+    - this is like how Gmail only shows you a preview of a new message
+
+    -  "some word".substring(x, y)
+          - x is where you start chopping
+          - y is where you finish chopping the original string
+
+      to select "he" in "hello", you would write this
+          "hello".substring(0, 2);
+
+    - each character in a string is numbered starting at 0
+        ex: h e l l o
+            0 1 2 3 4
+
+            but to slice after the "e", you actually need to slice up to position 2 > (0,2)
+
+        ex: From 4th to 6th letter of "laptop"
+            "laptop".substring(3, 6);
+
+            it's weird because you chop at 6 to include the 6th letter, but remember that the first letter is 0, so you are chopping before the 8th letter really
+
+        ex: "Melbourne is" in "Melbourne is great" (note the space)
+            console.log("Melbourne is great".substring(0, 12));
+
+
+        ex: "burgers" in "Hamburgers"
+            console.log("Hamburgers".substring(3, 10));
